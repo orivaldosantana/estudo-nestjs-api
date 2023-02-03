@@ -79,6 +79,17 @@ Nest is [MIT licensed](LICENSE).
 
 ### Como acessar um banca de dados
 
+- Pacote: prisma
+- Configurar a URL de conexão
+- Visualização dos dodos com prisma studio
+- Importar globalmente o Módulo Prisma para estar acessível para manipulação dos dados em outros módulos
+
 ### Como criar rotas para _sign in_ e _sign up_
+
+- Pacote: argon2
+- Lógica
+  - Gera um hash para a senha
+  - Salva o novo usuário no banco de dados
+  - Retorna o usuário cadastrado
 
 ### Como criar uma olá mundo em NestJS
