@@ -68,8 +68,9 @@ Nest is [MIT licensed](LICENSE).
 
 - Pacotes 'class-validator' e 'class-transformer'
 - Adicionar a validação através de 'decorators' no código da classe
-- Insaciar um validador global de classe
+- Instaciar um validador global de classe
 - Objeto do Tipo: TDO
+- É possível retirar automaticamente campos não presentes no DTO
   Tempo: 55:13
 
 ### Como lidar com as requisições
@@ -77,5 +78,7 @@ Nest is [MIT licensed](LICENSE).
 ### Como estruturar as regras de negócio
 
 ### Como acessar um banca de dados
+
+### Como criar rotas para _sign in_ e _sign up_
 
 ### Como criar uma olá mundo em NestJS
