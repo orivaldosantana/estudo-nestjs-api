@@ -87,9 +87,17 @@ Nest is [MIT licensed](LICENSE).
 ### Como criar rotas para _sign in_ e _sign up_
 
 - Pacote: argon2
-- Lógica
+- Lógica 'sign up'
   - Gera um hash para a senha
   - Salva o novo usuário no banco de dados
   - Retorna o usuário cadastrado
+- Lógica para 'sign in'
+  - Encontre o usuário por email
+  - Se não existir lance uma exceção
+  - Compare a senha
+  - Se senha incorreta lance uma exceção
+  - Retorne os dados do usuário
+
+Tempo: 1:00:00
 
 ### Como criar uma olá mundo em NestJS
