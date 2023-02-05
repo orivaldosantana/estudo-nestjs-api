@@ -100,4 +100,11 @@ Nest is [MIT licensed](LICENSE).
 
 Tempo: 1:00:00
 
+### Autenticação com JWT
+
+- Pacotes: @nestjs/passport passport @nestjs/jwt passport-jwt
+- Pacotes em modo dev: @types/passport-jwt
+  - Usar a opção '-D' no yarn
+- Importar o módulo JWT no módulo de autenticação
+
 ### Como criar uma olá mundo em NestJS
