@@ -8,17 +8,27 @@
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
 
-## Description
+## Descrição 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+API simples criada com o framework [Nest](https://github.com/nestjs/nest). 
 
-## Installation
+## Instalação
 
 ```bash
 $ yarn install
 ```
 
-## Running the app
+### Pacotes 
+Pacotes que foram instalados manualmente. Não é necessário executar os comandos abaixo pois o `yarn install` instala todos pacotes listados no _package.json_. 
+
+
+Primsa: 
+```bash
+$ yarn add -D prisma 
+$ yarn add @prisma/client 
+```
+
+## Executando a aplicação 
 
 ```bash
 # development
@@ -31,7 +41,7 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-## Test
+## Teste
 
 ```bash
 # unit tests
@@ -44,21 +54,64 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Banco de dados 
+O banco de dados para testes é criado a partir de uma imagem docker utilizando o arquivo 'docker-compose.yml'. 
+
+### Docker 
+
+Criando: 
+```bash
+$ docker compose up dev-db -d 
+```
+
+Vendo log: 
+```bash
+$ docker logs XXXXXXX
+```
+
+Listando os contêineres ativos: 
+```bash
+$ docker ps 
+```
+
+### Prisma 
+
+Comando para ajuda 
+```bash
+$ npx prisma --help
+```
+
+
+Iniciando o prisma pela pimeira vez no projeto 
+```bash
+$ npx prisma init 
+```
+
+Realizando as migrações definidas em 'schema.prisma' 
+```bash
+$ npx prisma migrate dev 
+```
+
+Visualizando os dados com prisma _studio_
+```bash
+$ npx prisma studio 
+```
+
+## Rotas 
+
+Em modo de desenvolvimento. 
+
+
+## Suporte
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+ 
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
+## Licença 
 
 Nest is [MIT licensed](LICENSE).
 
-## References
+## Referências 
 
 - [NestJs Course for Beginners - Create a REST API](https://www.youtube.com/watch?v=GHTA143_b-s)
 
