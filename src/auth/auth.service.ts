@@ -29,12 +29,10 @@ export class AuthService {
           throw new ForbiddenException('Credentials taken') 
         }
       }
-
     }
-  
   }
 
-  async signin(dto: AuthDto) {
+  async signin(dto: AuthDto): Promise<{}> {
     // Encontre o usuário por email
     const user = await this.prisma.user.findUnique({
       where: {email: dto.email,},
@@ -48,8 +46,18 @@ export class AuthService {
     // Se senha incorreta lance uma exceção
     if (!pwMatches) 
       throw new ForbiddenException('Credentials incorrect') 
-    // Retorne o token jwt
-    return this.signToken(user.id, user.email) 
+    // Retorne o token jwt e dados do usuário 
+    const token = await this.signToken(user.id, user.email) 
+    return { 
+            access_token: token.access_token,
+            user : { 
+               name: "XXXXX", 
+               email: user.email,
+            }
+         }
+    
+    
+     
   }
 
   async signToken(userId: number, email: string): Promise<{access_token: string}> {

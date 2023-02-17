@@ -64,7 +64,7 @@ Criando:
 $ docker compose up dev-db -d 
 ```
 
-Vendo log: 
+Acessando log: 
 ```bash
 $ docker logs XXXXXXX
 ```
@@ -130,7 +130,7 @@ Nest is [MIT licensed](LICENSE).
 
 ### Como estruturar as regras de negócio
 
-### Como acessar um banca de dados
+### Como acessar um banco de dados
 
 - Pacote: prisma
 - Configurar a URL de conexão
