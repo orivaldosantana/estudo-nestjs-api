@@ -8,9 +8,9 @@
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
 
-## Descrição 
+## Descrição
 
-API simples criada com o framework [Nest](https://github.com/nestjs/nest). 
+API simples criada com o framework [Nest](https://github.com/nestjs/nest).
 
 ## Instalação
 
@@ -18,17 +18,18 @@ API simples criada com o framework [Nest](https://github.com/nestjs/nest).
 $ yarn install
 ```
 
-### Pacotes 
-Pacotes que foram instalados manualmente. Não é necessário executar os comandos abaixo pois o `yarn install` instala todos pacotes listados no _package.json_. 
+### Pacotes
 
+Pacotes que foram instalados manualmente. Não é necessário executar os comandos abaixo pois o `yarn install` instala todos pacotes listados no _package.json_.
 
-Primsa: 
+Prisma:
+
 ```bash
-$ yarn add -D prisma 
-$ yarn add @prisma/client 
+$ yarn add -D prisma
+$ yarn add @prisma/client
 ```
 
-## Executando a aplicação 
+## Executando a aplicação
 
 ```bash
 # development
@@ -54,64 +55,69 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Banco de dados 
-O banco de dados para testes é criado a partir de uma imagem docker utilizando o arquivo 'docker-compose.yml'. 
+## Banco de dados
 
-### Docker 
+O banco de dados para testes é criado a partir de uma imagem docker utilizando o arquivo 'docker-compose.yml'.
 
-Criando: 
+### Docker
+
+Criando:
+
 ```bash
-$ docker compose up dev-db -d 
+$ docker compose up dev-db -d
 ```
 
-Acessando log: 
+Acessando log:
+
 ```bash
 $ docker logs XXXXXXX
 ```
 
-Listando os contêineres ativos: 
+Listando os contêineres ativos:
+
 ```bash
-$ docker ps 
+$ docker ps
 ```
 
-### Prisma 
+### Prisma
 
-Comando para ajuda 
+Comando para ajuda
+
 ```bash
 $ npx prisma --help
 ```
 
+Iniciando o prisma pela pimeira vez no projeto
 
-Iniciando o prisma pela pimeira vez no projeto 
 ```bash
-$ npx prisma init 
+$ npx prisma init
 ```
 
-Realizando as migrações definidas em 'schema.prisma' 
+Realizando as migrações definidas em 'schema.prisma'
+
 ```bash
-$ npx prisma migrate dev 
+$ npx prisma migrate dev
 ```
 
 Visualizando os dados com prisma _studio_
+
 ```bash
-$ npx prisma studio 
+$ npx prisma studio
 ```
 
-## Rotas 
+## Rotas
 
-Em modo de desenvolvimento. 
-
+Em modo de desenvolvimento.
 
 ## Suporte
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
- 
 
-## Licença 
+## Licença
 
 Nest is [MIT licensed](LICENSE).
 
-## Referências 
+## Referências
 
 - [NestJs Course for Beginners - Create a REST API](https://www.youtube.com/watch?v=GHTA143_b-s)
 
