@@ -105,6 +105,10 @@ Visualizando os dados com prisma _studio_
 $ npx prisma studio
 ```
 
+## Anotações 
+### Módulos 
+Uma aplicação de Nest é estruturada em módulos que pode ser composto de outros módulos e de diversos elementos. Os elementos mais comuns são: os controladores e os provedores de serviços. Os módulos faciltam a organização e manutenção do código da aplicação. Para criar um módulo é preciso usar a notação de decoratodor, `@Module`.
+
 ## Rotas
 
 Em modo de desenvolvimento.
