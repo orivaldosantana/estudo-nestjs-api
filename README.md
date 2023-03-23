@@ -107,13 +107,15 @@ $ npx prisma studio
 
 ## Anotações 
 ### Módulos 
-Uma aplicação de Nest é estruturada em módulos que pode ser composto de outros módulos e de diversos elementos. Os elementos mais comuns são: os controladores e os provedores de serviços. Os módulos faciltam a organização e manutenção do código da aplicação. Para criar um módulo é preciso usar a notação de decoratodor, `@Module`.
+  Uma aplicação de Nest é estruturada em módulos que pode ser composto de outros módulos e de diversos elementos. Os elementos mais comuns são: os controladores e os provedores de serviços. Os módulos faciltam a organização e manutenção do código da aplicação. Para criar um módulo é preciso usar a notação de decoratodor, `@Module`.
 
-Para criar uma código base de um módulo basta: 
-```bash
-$ nest g module nome
-```
-Em que *nome* é o nome do módulo e *g* é para 'gerar' o código base para o módulo. 
+  Para criar uma código base de um módulo basta: 
+  ```bash
+  $ nest g module nome
+  ```
+  Em que *nome* é o nome do módulo e *g* é para 'gerar' o código base para o módulo. 
+
+  O elemento **Controlador** é responsável por lidar com as requisições (HTTP) que chegam à aplicação. Os elementos provedores são responsáveis pela lógica de negócio. No elemento controlador, a injeção de dependência serve para gerenciar as instâncias de serviços, sem a necessidade de instanciar explicitamente.   
   
 ## Rotas
 
