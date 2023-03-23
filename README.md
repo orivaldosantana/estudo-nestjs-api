@@ -109,6 +109,12 @@ $ npx prisma studio
 ### Módulos 
 Uma aplicação de Nest é estruturada em módulos que pode ser composto de outros módulos e de diversos elementos. Os elementos mais comuns são: os controladores e os provedores de serviços. Os módulos faciltam a organização e manutenção do código da aplicação. Para criar um módulo é preciso usar a notação de decoratodor, `@Module`.
 
+Para criar uma código base de um módulo basta: 
+```bash
+$ nest g module nome
+```
+Em que *nome* é o nome do módulo e *g* é para 'gerar' o código base para o módulo. 
+  
 ## Rotas
 
 Em modo de desenvolvimento.
