@@ -179,3 +179,8 @@ Tempo: 1:00:00
 - Importar o módulo JWT no módulo de autenticação
 
 ### Como criar uma olá mundo em NestJS
+
+
+## Referências 
+
+* [Módulos em NestJS - Orivaldo](https://youtu.be/2-NDzU9m7g0)
