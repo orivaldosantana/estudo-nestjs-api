@@ -184,3 +184,4 @@ Tempo: 1:00:00
 ## Referências 
 
 * [Módulos em NestJS - Orivaldo](https://youtu.be/2-NDzU9m7g0)
+* [Obtendo um documento de um banco de dados (mongodb) via uma API (NestJS) - Orivaldo](https://youtu.be/-xr4P9kQgFE) 
